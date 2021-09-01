@@ -1,9 +1,61 @@
-﻿
+﻿@model IEnumerable<News_WebApp.Models.News>
+
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
 
- Welcome @ViewBag.userId
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+ @{ if (ViewBag.msg != null)
+     {
+     @ViewBag.msg
+     }
+ }
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UrlToImage)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishedAt)
+            </td>
+            <td>
+                <img src="@("~/images/" + item.UrlToImage)" asp-append-version="true" width="100px" height="100px" />
+            </td>
 
+
+            <td>
+               
+               
+                <a asp-action="Delete" asp-route-id="@item.NewsId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

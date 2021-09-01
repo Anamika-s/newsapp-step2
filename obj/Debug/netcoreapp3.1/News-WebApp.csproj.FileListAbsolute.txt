@@ -128,3 +128,5 @@ C:\Users\admivm\newsapp-step2-boilerplate\News-WebApp\obj\Debug\netcoreapp3.1\Ne
 C:\Users\admivm\newsapp-step2-boilerplate\News-WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
 C:\Users\admivm\newsapp-step2-boilerplate\News-WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 C:\Users\admivm\newsapp-step2-boilerplate\News-WebApp\obj\Debug\netcoreapp3.1\Razor\Views\News\Index.cshtml.g.cs
+C:\Users\admivm\newsapp-step2-boilerplate\News-WebApp\obj\Debug\netcoreapp3.1\Razor\Views\News\Create.cshtml.g.cs
+C:\Users\admivm\newsapp-step2-boilerplate\News-WebApp\obj\Debug\netcoreapp3.1\Razor\Views\News\Delete.cshtml.g.cs

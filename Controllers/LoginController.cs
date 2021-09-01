@@ -33,6 +33,9 @@ namespace News_WebApp.Controllers
             }
             else
             {
+                ModelState.AddModelError(string.Empty, "Invalid User Id and Password");
+                
+
                 return View();
             }
         }
